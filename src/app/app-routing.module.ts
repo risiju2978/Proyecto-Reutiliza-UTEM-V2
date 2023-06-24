@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VistaInicioComponent } from './Pagina-de-inicio/vista-inicio/vista-inicio.component';
+
 import { FooterComponent } from './Pagina-de-inicio/footer/footer.component';
+import { HeaderComponent } from './Pagina-de-inicio/header/header.component';
 const routes: Routes = [
-  {path: 'vistaInicio' , component:VistaInicioComponent},
+  {path: 'header' , component:HeaderComponent},
   {path: 'Footer' , component:FooterComponent},
 ];
 
