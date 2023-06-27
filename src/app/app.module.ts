@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { FooterComponent } from './Pagina-de-inicio/footer/footer.component';
 import { HeaderComponent } from './Pagina-de-inicio/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderComponent } from './Pagina-de-inicio/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
