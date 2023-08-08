@@ -13,6 +13,12 @@ import { ReglasDeReutilizaComponent } from './Vistas_general/reglas-de-reutiliza
 import { ReduceReutilizaReciclaComponent } from './Vistas_general/reduce-reutiliza-recicla/reduce-reutiliza-recicla.component';
 import { RegistrarseComponent } from './Vistas_general/registrarse/registrarse.component';
 import { IniciarSesionComponent } from './Vistas_general/iniciar-sesion/iniciar-sesion.component';
+import { ListaAvisosComponent } from './Pagina-de-inicio/lista-avisos/lista-avisos.component';
+import { AdministradorComponent } from './Modulos/administrador/administrador.component';
+import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
+import { PublicarAvisoComponent } from './Permisos-del-usuario/publicar-aviso/publicar-aviso.component';
+import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,13 @@ import { IniciarSesionComponent } from './Vistas_general/iniciar-sesion/iniciar-
     ReglasDeReutilizaComponent,
     ReduceReutilizaReciclaComponent,
     RegistrarseComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    ListaAvisosComponent,
+    AdministradorComponent,
+    UsuariosComponent,
+    PublicarAvisoComponent,
+    MiCuentaComponent,
+    EvaluacionesComponent
   ],
   imports: [
     BrowserModule,
