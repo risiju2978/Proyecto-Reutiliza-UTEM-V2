@@ -1,11 +1,15 @@
-p{
-    height: 100px;
-    margin-top: 40px ;
+h1{
+    padding: 2%;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
+
+    color: #2f4725;
 }
-
-
-.container-fluid{
+.container{
    
     margin-top: 0%;
     background: #F4F4F4;
