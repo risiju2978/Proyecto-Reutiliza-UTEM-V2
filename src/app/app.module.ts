@@ -16,9 +16,7 @@ import { IniciarSesionComponent } from './Vistas_general/iniciar-sesion/iniciar-
 import { ListaAvisosComponent } from './Pagina-de-inicio/lista-avisos/lista-avisos.component';
 import { AdministradorComponent } from './Modulos/administrador/administrador.component';
 import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
-import { PublicarAvisoComponent } from './Permisos-del-usuario/publicar-aviso/publicar-aviso.component';
-import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
-import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
+import { PublicarAvisoComponent } from './Modulos/usuarios/Permisos-del-usuario/publicar-aviso/publicar-aviso.component';
 
 @NgModule({
   declarations: [
@@ -34,9 +32,7 @@ import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
     ListaAvisosComponent,
     AdministradorComponent,
     UsuariosComponent,
-    PublicarAvisoComponent,
-    MiCuentaComponent,
-    EvaluacionesComponent
+    PublicarAvisoComponent
   ],
   imports: [
     BrowserModule,
