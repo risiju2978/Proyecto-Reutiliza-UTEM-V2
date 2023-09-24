@@ -17,6 +17,10 @@ import { ListaAvisosComponent } from './Pagina-de-inicio/lista-avisos/lista-avis
 import { AdministradorComponent } from './Modulos/administrador/administrador.component';
 import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
 import { PublicarAvisoComponent } from './Modulos/usuarios/Permisos-del-usuario/publicar-aviso/publicar-aviso.component';
+import { FormsModule } from '@angular/forms';
+import { CategoriasComponent } from './administrador/categorias/categorias.component';
+import { AdministrarcionDePublicacionesComponent } from './administrador/administrarcion-de-publicaciones/administrarcion-de-publicaciones.component';
+import { AdministrarcionDeUsuariosComponent } from './administrador/administrarcion-de-usuarios/administrarcion-de-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +36,16 @@ import { PublicarAvisoComponent } from './Modulos/usuarios/Permisos-del-usuario/
     ListaAvisosComponent,
     AdministradorComponent,
     UsuariosComponent,
-    PublicarAvisoComponent
+    PublicarAvisoComponent,
+    CategoriasComponent,
+    AdministrarcionDePublicacionesComponent,
+    AdministrarcionDeUsuariosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule // Agrega FormsModule aquí
   ],
   providers: [],
   bootstrap: [AppComponent]

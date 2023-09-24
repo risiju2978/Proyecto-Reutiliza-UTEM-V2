@@ -1,1 +1,219 @@
-<p>registrarse works!</p>
+
+
+<div class="container">
+    <h1 class="my-5">Registro Reutiliza</h1>
+    <form id="miFormulario">
+        <!-- Primer conjunto de campos -->
+        <div class="row">
+            <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+           
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+            <label for="nombre">Nombres</label>
+        </div>
+    </div>
+    <!-- segundo conjunto de campos -->
+    <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido Paterno" required>
+            <label for="apellidoPaterno">Apellido Paterno</label>
+        </div>
+    </div>
+
+    <!-- tercer conjunto de campos -->
+    <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido Materno" required>
+            <label for="apellidoMaterno">Apellido Materno</label>
+        </div>
+    </div>
+         <!-- Campo de Número Telefónico -->
+         <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+         <label for="telefono" class="form-label">Teléfono</label>
+<div class="form-floating mb-3">
+    <div class="input-group">
+        <span class="input-group-text">+56</span>
+
+        <input type="text" class="form-control" id="numeroTelefono" name="numeroTelefono" placeholder="Número de Teléfono" required>
+    </div>
+    <small class="text-muted">Formato: +56123456789</small>
+</div>
+</div>
+
+<!--campo carrera-->
+<div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="carrera" name="carrera" placeholder="Carrera" required>
+            <label for="carrera">Carrera</label>
+        </div>
+    </div>
+    <!--campo RUT-->
+    <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="rut" name="rut" placeholder="RUT" required>
+            <label for="rut">RUT</label>
+        </div>
+    </div>
+    <!--campo comuna a la cual pertenece-->
+    <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <select id="comuna" name="comuna" class="form-select" required>
+                <option value="" disabled selected>Selecciona tu comuna</option>
+                <option value="Cerrillos">Cerrillos</option>
+                <option value="Cerro Navia">Cerro Navia</option>
+                <option value="Conchalí">Conchalí</option>
+                <option value="El Bosque">El Bosque</option>
+                <option value="Estación Central">Estación Central</option>
+                <option value="Huechuraba">Huechuraba</option>
+                <option value="Independencia">Independencia</option>
+                <option value="La Cisterna">La Cisterna</option>
+                <option value="La Florida">La Florida</option>
+                <option value="La Granja">La Granja</option>
+                <option value="La Pintana">La Pintana</option>
+                <option value="La Reina">La Reina</option>
+                <option value="Las Condes">Las Condes</option>
+                <option value="Lo Barnechea">Lo Barnechea</option>
+                <option value="Lo Espejo">Lo Espejo</option>
+                <option value="Lo Prado">Lo Prado</option>
+                <option value="Macul">Macul</option>
+                <option value="Maipú">Maipú</option>
+                <option value="Ñuñoa">Ñuñoa</option>
+                <option value="Padre Hurtado">Padre Hurtado</option>
+                <option value="Paine">Paine</option>
+                <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+                <option value="Peñaflor">Peñaflor</option>
+                <option value="Peñalolén">Peñalolén</option>
+                <option value="Pirque">Pirque</option>
+                <option value="Providencia">Providencia</option>
+                <option value="Pudahuel">Pudahuel</option>
+                <option value="Puente Alto">Puente Alto</option>
+                <option value="Quilicura">Quilicura</option>
+                <option value="Quinta Normal">Quinta Normal</option>
+                <option value="Recoleta">Recoleta</option>
+                <option value="Renca">Renca</option>
+                <option value="San Bernardo">San Bernardo</option>
+                <option value="San Joaquín">San Joaquín</option>
+                <option value="San José de Maipo">San José de Maipo</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="San Pedro">San Pedro</option>
+                <option value="San Ramón">San Ramón</option>
+                <option value="Santiago">Santiago</option>
+                <option value="Talagante">Talagante</option>
+                <option value="Tiltil">Tiltil</option>
+                <option value="Vitacura">Vitacura</option>
+                <!--  opciones de comunas -->
+            </select>
+            <label for="comuna">Comuna</label>
+        </div> 
+    </div>
+     <!--  campo sede de la utem -->
+     <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <select id="sede" name="sede" class="form-select" required>
+                <option value="Santiago">Santiago Centro</option>
+                <option value="Providencia">Providencia</option>
+                <option value="Macul">Macul</option>
+                <!-- Agrega más opciones según las sedes disponibles -->
+            </select>
+            <label for="sede">Sede UTEM</label>
+        </div>
+    </div>
+    <!--  campo correo electronico -->
+    <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico" required>
+            <label for="email">Credenciales institucionales (Correo electronico)</label>
+        </div>
+
+    </div>
+      
+       
+        
+      <!-- Campo de Contraseña -->
+      <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+      <div class="form-floating mb-3">
+        <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Contraseña"
+            required
+            (input)="validatePassword()"
+        >
+        <label for="password">Contraseña</label>
+        <div class="password-validation-circle" [style.backgroundColor]="circleColor" (mouseenter)="showPasswordRules = true" (mouseleave)="showPasswordRules = false"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+    </div>
+
+    <div *ngIf="showPasswordRules" class="password-rules-tooltip  alert alert-primary mt-3">
+        <p>La contraseña debe cumplir con los siguientes requisitos:</p>
+        <ul>
+            <li>Al menos una letra minúscula</li>
+            <li>Al menos una letra mayúscula</li>
+            <li>Al menos un número</li>
+            <li>Al menos un carácter especial </li>
+            <li>Longitud mínima de 8 caracteres</li>
+        </ul>
+    </div>
+
+</div>
+
+   <!-- Campo de confirmacion Contraseña -->
+   <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+            <label for="confirmPassword">Confirmación de contraseña</label>
+        </div>
+    </div>
+     <!-- Campo de genero -->
+     <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <select class="form-select" id="Genero" aria-label="Genero">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="preferNotToSay">prefiero no decirlo</option>
+            </select>
+            <label for="Genero">Género</label>
+        </div>
+    </div>
+     <!-- Campo de genero -->
+     <div class="col-12  col-sm-10 col-md-8 col-lg-6">
+        <div class="form-floating mb-3">
+            <input type="date" class="form-control" id="birthdate" placeholder="Fecha de nacimiento">
+            <label for="birthdate">Fecha de nacimiento</label>
+        </div>
+    </div>
+       
+</div>
+        <!-- notificaciones -->
+       
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="notificaciones" name="notificaciones">
+            <label class="form-check-label" for="notificaciones">¿Desea recibir notificaciones en su email?</label>
+        </div>
+  
+        <!-- Checkbox de términos y condiciones -->
+       
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
+            <label class="form-check-label" for="terminos">Acepta los términos y condiciones</label>
+        </div>
+   
+
+
+
+        <!-- Botón de envío -->
+        <div class="d-grid  col-4  ">
+        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+    </div>
+        <div class="login-link">
+            <p>   &nbsp;  ¿Tienes una cuenta? <a routerLink="/iniciar-sesion" title="iniciar sesion">Iniciar Sesión</a></p>
+        </div>
+    </form>
+
+<br>
+    <div id="aviso" class="aviso">
+        <i class="fa-solid fa-star" aria-hidden="true"></i>&nbsp; Para cualquier consulta envíe un correo a soporte.sisei@utem.cl.
+    </div>
+    
+</div>

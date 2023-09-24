@@ -1,0 +1,24 @@
+.aviso {
+    padding: 10px;
+    background-color: #638cb8; /* Color de fondo azul */
+    color: white; /* Texto en blanco */
+    font-weight: bold; /* Texto en negrita */
+}
+h1{
+    left: 137px;
+    top: 246px;
+    font-family: Merriweather Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 69px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.065em;
+    color: #4A8732;
+    margin-top: 10%;
+    margin-left: 1%;
+}
+
+

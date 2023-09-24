@@ -1,1 +1,89 @@
-<p>administrador works!</p>
+<div class="container mt-5">
+    <div class="row ">
+     
+     
+        <div class="col-12  text-center align-items-center">
+            <!-- Título de datos del administrador -->
+            <h1  > ADMINISTRACIÓN</h1>
+          </div>
+     
+        <div class="col-6 my-5">
+        <!-- Opción de agregar imagen de perfil -->
+        <div class="profile-image-container">
+          <img class="avatar" src="assets/images/busqueda.png" alt="Imagen de perfil" class="profile-image img-fluid rounded-circle">
+          <label for="fileInput" class="profile-image-label ">
+            <i class="fas fa-camera"></i> Cambiar imagen
+          </label>
+          <input type="file" id="fileInput" style="display: none;">
+        </div>
+      </div>
+  
+  
+      <div class="col-6 align-self-center ">
+        <!-- Botón desplegable grande y centrado -->
+        <div class="d-flex justify-content-center  mt-4">
+            <div class="btn-group">
+                <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu de administración
+                </button>
+                <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'users'">Administración de Usuarios</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'posts'">Administración de Publicaciones</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'categories'">Categorías</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'myavisos'">Publicar Aviso</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'evaluation'">Evaluación</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'notifications'">Notificaciones</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'logout'">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+       
+        <h2 class="table-dark mt-5">Perfil del Administrador</h2>
+     
+        <table class="table table-bordered border-dark table-hover  ">
+      
+          <tbody>
+            <tr>
+              <td><strong>Nombre del Administrador:</strong></td>
+              <td><!--{{ administrador.nombre }}--></td>
+            </tr>
+            <tr>
+              <td><strong>Estado:</strong></td>
+              <td><!--{{ administrador.estado }}--></td>
+            </tr>
+            <tr>
+              <td><strong>RUT:</strong></td>
+              <td><!--{{ administrador.rut }}--></td>
+            </tr>
+            <tr>
+              <td><strong>Celular:</strong></td>
+              <td><!--{{ administrador.celular }}--></td>
+            </tr>
+            <tr>
+              <td><strong>Credenciales UTEM :</strong></td>
+              <td><!--{{ administrador.correo }}--></td>
+            </tr>
+            <tr>
+              <td><strong>Sexo:</strong></td>
+              <td><!--{{ administrador.sexo }}--></td>
+            </tr>
+            <tr>
+              <td><strong>Nacionalidad:</strong></td>
+              <td><!--{{ administrador.nacionalidad }}--></td>
+            </tr>
+            <tr>
+              <td><strong>Comuna:</strong></td>
+              <td><!--{{ administrador.comuna }}--></td>
+            </tr>
+            <tr>
+              <td><strong>Dirección:</strong></td>
+              <td><!--{{ administrador.direccion }}--></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>

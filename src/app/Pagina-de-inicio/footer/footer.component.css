@@ -1,4 +1,15 @@
+.acreditacion {
+    float: right; /* Colocar a la derecha */
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
 
+.excelencia {
+    float: right; /* Colocar a la derecha */
+    width: 200px; /* Mismo ancho que la otra imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
 body{
     margin: 0;
 }
