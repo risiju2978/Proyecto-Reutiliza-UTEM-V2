@@ -1,0 +1,21 @@
+.subtitulo{
+    
+    font-family: Merriweather Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 69px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.065em;
+    color: #4A8732;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+.accordion-button:hover {
+    text-decoration: underline;
+  }
+  
+
