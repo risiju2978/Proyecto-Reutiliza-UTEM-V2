@@ -7,9 +7,16 @@ import { CategoriasComponent } from './Permisos-del-administrador/categorias/cat
 import {  AdministrarcionDeUsuariosComponent } from './Permisos-del-administrador/administracion-de-usuarios/administrarcion-de-usuarios.component';
 import { AdministrarcionDePublicacionesComponent } from './Permisos-del-administrador/administracion-de-publicaciones/administrarcion-de-publicaciones.component';
 import { PublicarAvisoComponent  } from './Permisos-del-administrador/publicar-aviso/publicar-aviso.component';
+import { AdministradorComponent } from './administrador.component';
 
 // Define las rutas hijas para el módulo "Administrador"
 const administradorRoutes: Routes = [
+    {
+        path: 'administrador',
+        component: AdministradorComponent,
+        children: [
+    
+
   {
     path: 'categorias',
     component: CategoriasComponent,
@@ -26,7 +33,9 @@ const administradorRoutes: Routes = [
     path: 'publicar-avisos',
     component:  PublicarAvisoComponent,
   },
-  // Agrega más rutas hijas según sea necesario
+]
+    }
+  
 ];
 
 @NgModule({

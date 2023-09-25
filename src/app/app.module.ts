@@ -18,9 +18,7 @@ import { AdministradorComponent } from './Modulos/administrador/administrador.co
 import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
 import { PublicarAvisoComponent } from './Modulos/usuarios/Permisos-del-usuario/publicar-aviso/publicar-aviso.component';
 import { FormsModule } from '@angular/forms';
-import { CategoriasComponent } from './administrador/categorias/categorias.component';
-import { AdministrarcionDePublicacionesComponent } from './administrador/administrarcion-de-publicaciones/administrarcion-de-publicaciones.component';
-import { AdministrarcionDeUsuariosComponent } from './administrador/administrarcion-de-usuarios/administrarcion-de-usuarios.component';
+import { AdministradorModule } from './Modulos/administrador/administrador-routing.module';
 
 @NgModule({
   declarations: [
@@ -37,15 +35,15 @@ import { AdministrarcionDeUsuariosComponent } from './administrador/administrarc
     AdministradorComponent,
     UsuariosComponent,
     PublicarAvisoComponent,
-    CategoriasComponent,
-    AdministrarcionDePublicacionesComponent,
-    AdministrarcionDeUsuariosComponent
+   
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule // Agrega FormsModule aquí
+    FormsModule,
+    AdministradorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,7 +17,7 @@ import { ListaAvisosComponent } from './Pagina-de-inicio/lista-avisos/lista-avis
 
 // rutas establecidas desde pagina de inicio
 const routes: Routes = [
-  { path: '', redirectTo: 'lista-avisos', pathMatch: 'full' }, // Cambia 'Pagina-de-inicio' a 'lista-avisos'
+  { path: '', redirectTo: 'lista-avisos', pathMatch: 'full' }, 
   { path: 'header', component: HeaderComponent },
   { path: 'Footer', component: FooterComponent },
   { path: 'como-funciona', component: ComoFuncionaComponent },
@@ -26,7 +26,8 @@ const routes: Routes = [
   { path: 'reduce-reutiliza-recicla', component: ReduceReutilizaReciclaComponent },
   { path: 'registrarse', component: RegistrarseComponent },
   { path: 'reglas-de-reutiliza', component: ReglasDeReutilizaComponent },
-  
+  { path: 'administrador', component: AdministradorComponent},
+  { path: 'lista-avisos', component:  ListaAvisosComponent}, 
   {
     path: 'administrador',
     loadChildren: () =>
@@ -36,14 +37,14 @@ const routes: Routes = [
   },
   
   
-  //{ path: 'administrador', component: AdministradorComponent},
+  
   /*{
     path: 'administrador',
     loadChildren: () => import('./Modulos/administrador/administrador.component').then(m => m.AdministradorComponent),
     canLoad: [AdminGuard] // Utiliza el guard CanLoad en lugar de canActivate
   },*/
-  { path: '**', redirectTo: 'lista-avisos', pathMatch: 'full' }, // Cambia 'Pagina-de-inicio' a 'lista-avisos'
-  { path: 'lista-avisos', component:  ListaAvisosComponent}, // Nueva ruta para lista-avisos
+ 
+
 ];
 
 

@@ -1,3 +1,4 @@
+
 <div class="container mt-5">
     <div class="row ">
      
@@ -27,15 +28,15 @@
                     Menu de administración
                 </button>
                 <ul class="dropdown-menu">
-                    
-                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'users'">Administración de Usuarios</a></li>
-                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'posts'">Administración de Publicaciones</a></li>
-                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'categories'">Categorías</a></li>
-                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'myavisos'">Publicar Aviso</a></li>
-                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'evaluation'">Evaluación</a></li>
-                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'notifications'">Notificaciones</a></li>
-                    <li><a class="dropdown-item" href="#" (click)="selectedOption = 'logout'">Cerrar Sesión</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['administracion-de-usuarios']">Administración de Usuarios</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['administracion-de-publicaciones']">Administración de Publicaciones</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['categorias']">Categorías</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['publicar-avisos']">Publicar Aviso</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['evaluacion']">Evaluación</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['notificaciones']">Notificaciones</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['logout']">Cerrar Sesión</a></li>
                 </ul>
+                
             </div>
         </div>
     </div>
@@ -87,3 +88,4 @@
         </table>
       </div>
   </div>
+  <router-outlet></router-outlet>
