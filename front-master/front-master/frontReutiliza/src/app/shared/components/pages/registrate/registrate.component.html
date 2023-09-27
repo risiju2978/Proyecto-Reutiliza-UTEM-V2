@@ -1,0 +1,80 @@
+<div class="row" style="margin-right:0;" id="headerColumns" >
+  <div class="datosPersonales mt-6" >Datos personales</div>
+  <div class="container" id="datosPersonales">
+    <form [formGroup]="registerForm" (ngSubmit)="submitFormUser()">
+        <div class="form-row mt-3 mb-1">
+            <div class="col-md-4 mb-3">
+                <label for="nameAdd">Nombre*</label>
+                <input type="text" class="form-control" formControlName="name"  id="nameAdd" placeholder="Ingresa tu nombre" (blur)="validateFormFunction()" required >
+            </div>    
+            <div class="col-md-4 mb-3">
+                <label for="lastnameAdd">Apellidos*</label>
+                <input type="text" class="form-control"  formControlName="lastname" id="lastnameAdd" placeholder="Ingresa tu apellido" (blur)="validateFormFunction()" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="rutAdd">Rut*</label>
+                <input type="text" class="form-control" formControlName="rut"  id="rutAdd" placeholder="Ingresa tu rut" (blur)="validateFormFunction()" required>
+            </div>
+            <div class="col-md-4 mb-3" >
+                <label for="mailAdd">Correo UTEM*</label>
+                <div class="input-group">            
+                    <input aria-describedby="sufijo-email" type="text" class="form-control" formControlName="mail" id="mailAdd" placeholder="Correo UTEM" (blur)="validateFormFunction()" required>
+                    <div class="input-group-append" style="display: block;">
+                        <span class="input-group-text" id="sufijo-email">@utem.cl</span>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <label for="inputCampus">Campus*</label>
+                <select id="inputCampus validationServer02" class="form-control" formControlName="campus" (blur)="validateFormFunction()" required>
+                    <option selected>Elegir...</option>
+                    <option value="1" >Área Central</option>
+                    <option value="2" >Macul</option>
+                    <option value="3" >Providencia</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3" >
+                <label  for="inputSexo">Sexo*</label>    
+                <select id="inputSexo" class="form-control" formControlName="sexo" (blur)="validateFormFunction()" required>
+                    <option  selected>Selecciona </option>
+                    <option value="F" >Femenino</option>
+                    <option value="M" >Masculino</option>
+                    <option value="O" >Omitir</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3" >
+                <label for="phoneWspAdd">Telefono*</label>
+                <div class="input-group">
+                    <div class="input-group-prepend" style="display: block;">
+                        <span class="input-group-text" id="prefijo-telefono">+569</span>
+                    </div>
+                    <input aria-describedby="prefijo-telefono" type="number" class="form-control" formControlName="phone" id="phoneAdd" placeholder="Numero de celular" (blur)="validateFormFunction(); validarTelefono($event); copiarTelefono($event)" required>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3" >
+                <label for="phoneWspAdd">Telefono whatsapp</label>
+                <div class="input-group">
+                    <div class="input-group-prepend" style="display: block;">
+                        <span class="input-group-text" id="prefijo-telefono">+569</span>
+                    </div>
+                    <input aria-describedby="prefijo-telefono" type="text" class="form-control" formControlName="phoneWsp" id="phoneWspAdd" placeholder="Whatsapp" (blur)="validateFormFunction(); validarWsp($event);">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" >
+                <div class="form-group mt-4">
+                    <label class="ml-3" >Sube una foto de perfil</label>
+                    <label class="btn btn-primary ml-2" id="circle_upload">
+                        <input id="my-file-selector" type="file" style="display:none;" (change)="uploadFile($event)">
+                        <span id="image">+</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="!this.validateForm" class="btn validar" style="margin-left: 42%;" >Enviar</button>
+        </div>
+        </form>
+  </div>
+    
+</div>
+  

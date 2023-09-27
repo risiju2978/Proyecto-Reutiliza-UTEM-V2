@@ -1,0 +1,95 @@
+#gestionarCategorias{
+    width: 80%;
+    left: 269px;
+    top: calc(50% - 328px/2 - 424px);
+    background: #F4F4F4;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gestionarCategorias{
+    width: 250px;
+    height: 12px;
+    left: 269px;
+    top: 368px;
+    margin: 2%;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 12px;
+    /* identical to box height, or 52% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+/deep/ .mat-form-field{
+    width: 49% !important;
+}
+
+/deep/ .mat-form-field-type-mat-select .mat-form-field-label, .mat-select-value {
+    color: grey !important;
+}
+
+/deep/ .mat-select-value{
+    color: grey !important;
+}
+
+/deep/  .mat-select-arrow {
+    color: grey !important;
+}
+
+ /deep/ .mat-input-element{
+    background-color: white  !important;
+    caret-color: grey !important;
+ } 
+
+/deep/ .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    color: #F4F4F4;
+}
+
+/deep/ .mat-input-element::placeholder{
+    color: grey !important;
+ }
+
+/deep/ .mat-select-search-inside-mat-option .mat-select-search-input{
+    color: grey !important;
+ }
+
+/deep/ .mat-option-text {
+    color: grey !important;
+}
+
+/deep/ .mat-option.mat-active{
+    background: white !important;
+}
+
+/deep/ .mat-option{
+    background: white !important;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    /deep/ .mat-form-field{
+        width: 57% !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    /deep/ .mat-form-field{
+        width: 40% !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /deep/ .mat-form-field{
+        width: 30% !important;
+    }
+}
+
+

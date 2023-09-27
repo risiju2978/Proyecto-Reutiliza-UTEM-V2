@@ -1,0 +1,137 @@
+.inicio{
+    height: 900px !important;
+}
+
+#datosPersonales{
+    width: 80%;
+    left: 269px;
+    top: calc(50% - 328px/2 - 424px);
+    background: #F4F4F4;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.datosPersonales{
+    width: 210px;
+    height: 12px;
+    left: 269px;
+    top: 368px;
+    margin: 2%;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 12px;
+    /* identical to box height, or 52% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.text-warning {
+    color: #BFB947!important;
+}
+
+.border-warning {
+    border-color: #BFB947!important;
+}
+
+.card-header:first-child {
+    color: #FF6B00;
+}
+
+.titulos{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.validar{
+    width: 142px;
+    height: 52px;
+    left: 594px;
+    top: 956px;
+
+    background: #BFB947;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 12px;
+    /* identical to box height, or 60% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#circle_upload{
+    left: 870px;
+    top: 646px;
+    background: #BFB947;
+    border-radius: 100%;
+    border: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#image {
+    width: 14px;
+    height: 29px;
+    left: 880px;
+    top: 648px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .h5, h5 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .titulos {
+        font-size: 10px;
+    }
+    .mb-3, .my-3 {
+        margin-bottom: 0.3rem!important;
+    }
+    .mt-4, .my-4 {
+        margin-top: 0.5rem!important;
+    }
+    .card-body {
+        padding: 0px;
+    }
+    .datosPersonales{
+        width: 150px;
+        margin-top: 4% !important;
+        margin-left: 10%;
+        font-size: 15px;    
+    }
+    .validar{
+        font-size: 15px;
+        height: 40px;
+        width: 100px;
+    
+    }
+    .form-row {
+        display: table-cell;
+    }
+}
+

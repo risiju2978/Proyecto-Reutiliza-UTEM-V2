@@ -1,0 +1,150 @@
+#logoUtem {
+
+    background-image: url("../../../../assets/images/logo_reutilza_utem.png");
+    background-repeat: no-repeat; 
+    background-position: bottom 80% left 50%;
+}
+
+#logoSustenta{
+    background-image: url("../../../../assets/images/Logo_sustenta.png");
+    background-repeat: no-repeat; 
+    background-position: bottom 80% left 5%;
+
+}
+
+#logoGobierno{
+    height: 15%;
+    background-image: url("../../../../assets/icons/logo_gobierno.png");
+    background-repeat: no-repeat; 
+    background-size: 30%;
+
+}
+
+#headerColumns{
+    display: inline;
+
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+  
+.left {
+    width: 30%;
+}
+  
+.right {
+    width: 30%;
+}
+.center {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.inner-addon {
+    position: relative;
+  }
+  
+  /* style glyph */
+  .inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+  }
+  
+  /* align glyph */
+  .left-addon .glyphicon  { left:  0px;}
+  .right-addon .glyphicon { right: 0px;}
+  
+  /* add padding  */
+  .left-addon input  { padding-left:  30px; }
+  .right-addon input { padding-right: 30px; }
+  
+  
+
+
+  .search {
+    width: 299px;
+    height: 39px;
+    left: 908px;
+    top: 59px;
+    background: #EEEEEE;
+    border: 0rem;
+
+  }
+
+
+  .search_image {
+    /* width: 299px; */
+    height: 39px;
+    left: 908px;
+    top: 59px;
+    border: 0rem;
+    padding: 0;
+
+  }
+
+  .post_notice{
+    color: #EEEEEE;
+    width: 141px;
+    height: 39px;
+    left: 1066px;
+    top: 98px;
+    border-radius: 0%;
+    clear: right;
+    background: #FF6B00;
+  }
+
+  .navbar_style{
+    background: #427AA1;
+    padding: 0px;
+  }
+
+  .color_text_navbar{
+      color: white !important;
+  }
+
+  .border-md-right {
+    border-right: 1px solid silver;
+
+  }
+
+  .nav-link{
+    padding: 1.4rem 0rem;
+  }
+
+@media only screen and (max-width: 990px) {
+  .nav-link{
+    margin-left: 5%;
+  }
+}
+
+.dropdown-menu{
+  background-color: #427AA1;
+}
+
+.dropdown-item{
+  color: white;
+  opacity: 50%;
+  display: inline;
+}
+
+.dropdown-item:hover{
+  background-color :#427AA1 !important;
+  opacity: 80%;
+}
+
+
+
+
+  
+ 
+
+  

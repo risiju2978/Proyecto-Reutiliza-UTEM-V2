@@ -1,0 +1,722 @@
+.envoltura-16{
+    width: 100%;
+}
+
+.space{
+    overflow: hidden;
+}
+
+.menu-redes{
+    min-width: 270px; 
+    width: 100%; 
+    padding-top: 0rem!important;
+}
+
+
+.contenedor-redes { 
+    min-height: 80px; 
+    padding: 22px 20px; 
+    position: relative; 
+    vertical-align: middle !important; 
+    background-color: #000000;
+    padding: 22px 15px;
+}
+
+
+ul{
+    display: inline-block; 
+    float: left; 
+    height: 36px; 
+    width: auto; 
+}
+nav.menu-redes ul li h2  {float: left;margin-right: 20px;}
+
+
+
+ul li ul li {
+	float: left;
+	margin-right: 10px;
+	-webkit-transition: background-color .2s ease-in-out;
+	   -moz-transition: background-color .2s ease-in-out;
+	    -ms-transition: background-color .2s ease-in-out;
+	     -o-transition: background-color .2s ease-in-out;
+	        transition: background-color .2s ease-in-out;
+}
+ul li h2  {float: left;margin-right: 20px;}
+ul li h2       {font-size: 0.9rem;line-height: 36px;}
+ul li ul li:hover      { background-color: #292929; }
+ul li ul li:last-child { margin-right: 0; }
+ul li h2       {color: #E6E6E6;}
+h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; font-size: 14px;}
+p, ul                  { font-family: 'OpenSans-Regular', Arial, Helvetica, sans-serif; }
+a                      { font-family: 'OpenSans-Semibold', Arial, Helvetica, sans-serif; }
+time                   { font-family: 'RobotoSlab-Regular', Arial, Helvetica, sans-serif; }
+img               { color: transparent; font-size: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; /* Para IE*/ }
+ul li ul li {
+	float: left;
+	margin-right: 10px;
+	-webkit-transition: background-color .2s ease-in-out;
+	-moz-transition: background-color .2s ease-in-out;
+	-ms-transition: background-color .2s ease-in-out;
+	-o-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+}
+
+#pie-pagina         { background-color: #252525; border-top: solid 1px #353535; padding: 40px 0 0 0; }
+div#menu-pie-pagina { padding-bottom: 40px; }
+
+#pie-pagina         { padding: 20px 0 0 0; }
+div#menu-pie-pagina { padding-bottom: 20px; }
+
+.envoltura-16 { margin-left: auto; margin-right: auto; width: 1280px; }
+.linea-inf-oscura           { border-bottom: solid 1px #000; }   
+#corporativo-pie-pagina { background-color: #191919; border-top: solid 1px #353535; float: left; padding: 40px 0 0 0; width: 100%; }
+#corporativo-pie-pagina .contenedor-crpvo-pie-pagina, .prensa { min-width: 300px; width: 100%; }
+#corporativo-pie-pagina .contenedor-crpvo-pie-pagina {
+	display: table;
+	height: 120px;
+	padding: 0 20px 40px 20px;
+	position: relative;
+}
+
+.cabecera-nav-pie-pagina h3   { font-size: 14px; line-height: 1.8; }
+nav.menu-redes ul li h2       { color: #E6E6E6; }
+.cabecera-nav-pie-pagina h3   { color: #E6E6E6; }
+div#menu-pie-pagina ul        { font-size: 0; }
+.nav-pie-pagina ul li a       { color: #666; font-size: 13px; line-height: 140%; }
+.meta-autor                   { color: #666; font-size: 1.4rem; line-height: 150%; }
+.meta-autor .cp               { font-size: 1.2rem; line-height: 130%; }
+.meta-autor a                 { color: #E6E6E6; }
+#form-intranet .campo #usuario,
+#form-intranet .campo #clave  { color: #666; font-family: 'OpenSans-Regular', arial, helvetica; font-size: 1.4rem; }
+#entrar                       { color: #666; font-family: 'OpenSans-Semibold', arial, helvetica; font-size: 1.4rem; }
+.gob-pie-rsp                  { text-align: center; }
+ol, ul            { list-style: none; }
+
+#pie-pagina         { padding: 20px 0 0 0; }
+
+#form-intranet .campo #usuario, #form-intranet .campo #clave {
+	background: #191919;
+	border: none;
+	display: block; 
+	float: left;
+	height: 30px;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.borde-menu-pie-pagina {
+    border-left: dotted 1px #666;
+    float: left;
+    padding-left: 15px;
+    width: 100%;
+}
+
+
+.contenedor-redes .acreditacion { display: inline-block; float: right; height: 36px; }
+
+tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {border: 0;font-size: 100%;margin: 0;padding: 0;}
+
+#pie-pagina         { padding: 20px 0 0 0; }
+    div#menu-pie-pagina { padding-bottom: 20px; }
+    
+    /* -- PIE DE PAGINA ----------------------------------------------- */
+/* ================================================================ */
+
+#pie-pagina         { background-color: #252525; border-top: solid 1px #353535; padding: 40px 0 0 0; }
+div#menu-pie-pagina { padding-bottom: 40px; }
+
+#corporativo-pie-pagina .contenedor-crpvo-pie-pagina {
+	display: table;
+	height: 120px;
+	padding: 0 20px 40px 20px;
+	position: relative;
+}
+
+.cabecera-nav-pie-pagina    { height: 35px; }
+.cabecera-nav-pie-pagina h3 { float: left; height: 18px; width: 100%; }
+.meta-autor                 { display: table-cell; margin: 0 auto; vertical-align: middle; }
+.meta-autor .cp             { margin-top: 10px; }
+
+/* -- Menu pie de pagina ------------------------------------------ */
+/* ---------------------------------------------------------------- */
+
+main, menu, nav, section { display: block; } /* IE8 e inferiores requieren SHIV */
+/* -- Cuadricula y Contenedores ------------- */
+
+.envoltura-16, nav#nav-escritorio, #redes .contenedor-redes, div#menu-pie-pagina,
+#corporativo-pie-pagina .contenedor-crpvo-pie-pagina, .prensa {min-width: 300px;width: 100%;}
+nav.menu-redes { min-width: 270px; width: 100%; }
+
+/* -- Pie ----------------------------------- */
+
+
+li.col-4-pie:last-child { border-bottom: none; }
+
+div#intranet, nav.nav-pie-pagina,
+.borde-menu-pie-pagina  { border-left: none; padding-left: 0; }
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big,
+blockquote, body, canvas, caption, center, cite, code, dd, del, details,
+dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure,
+font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i,
+iframe, img, ins, kbd, label, legend, li, main, mark, menu, meter, nav,
+object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section,
+small, span, strike, strong, sub, summary, sup, table, tbody, td,
+tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp { border: 0; font-size: 100%; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+main, menu, nav, section { display: block; } /* IE8 e inferiores requieren SHIV */
+
+b, strong         { font-weight: bold; }
+img               { color: transparent; font-size: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; /* Para IE*/ }
+ol, ul            { list-style: none; }
+li                { display: list-item; } /* Pata IF3 6 y 7 */
+table             { border-collapse: collapse; border-spacing: 0; }
+th, td, caption   { font-weight: normal; text-align: left; vertical-align: top; }
+q                 { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+sub, sup, small   { font-size: 75%; }
+sub, sup          { line-height: 0; position: relative; vertical-align: baseline; }
+sub               { bottom: -0.25em; }
+sup               { top: -0.5em; }
+svg               { overflow: hidden; } /* Para IE9 */
+a                 { text-decoration: none; }
+xmp               { list-style: none; }
+
+/* ================================================================ */
+/* -----------------------------  &&  ----------------------------- */
+/* ----------------------->>> CUADRICULA <<<----------------------- */
+/* -----------------------------  &&  ----------------------------- */
+/* ================================================================ */
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* ================================================================ */
+/* ----------------------->>> AYUDANTES <<<------------------------ */
+/* ================================================================ */
+
+.espacio-vinf               { margin-bottom: 40px; }
+.espacio-vsup               { margin-top: 40px; }
+.limpiar                    { clear: both; display: block; height: 0; overflow: hidden; visibility: hidden; width: 0; }
+.posicion-relativa-cabecera { height: 150px; position: relative; }
+.bg-blanco                  { background-color: #FFF; }
+.linea-inf-oscura           { border-bottom: solid 1px #000; }
+.borde-sup-crpvo-ppag       { border-top: solid 1px #353535; display: none; padding: 30px 0; }
+
+/* ================================================================ */
+/* ------------------------->>> CAJAS <<<-------------------------- */
+/* ================================================================ */
+
+
+
+/* ================================================================ */
+/* ------------------------>>> COLUMNAS <<<------------------------ */
+/* ================================================================ */
+
+.col-1, .col-2, .col-3, .col-4,
+.col-5, .col-6, .col-7, .col-8,
+.col-9, .col-10, .col-11, .col-12,
+.col-13, .col-14, .col-15, .col-16 { display: inline; float: left; margin-left: 20px; margin-right: 20px; }
+
+.col-1  { width: 40px; }   .col-2  { width: 120px; }  .col-3  { width: 200px; }  .col-4  { width: 280px; }
+.col-5  { width: 360px; }  .col-6  { width: 440px; }  .col-7  { width: 520px; }  .col-8  { width: 600px; }
+.col-9  { width: 680px; }  .col-10 { width: 760px; }  .col-11 { width: 840px; }  .col-12 { width: 920px; }
+.col-13 { width: 1000px; } .col-14 { width: 1080px; } .col-15 { width: 1160px; } .col-16 { width: 1240px; }
+
+.col-5-16  { float: left; width: 31.25%; }
+.col-11-16 { float: left; width: 68.75%; }
+
+/* ================================================================ */
+/* -----------------------------  &&  ----------------------------- */
+/* ------------------------>>> BLOQUES <<<------------------------- */
+/* -----------------------------  &&  ----------------------------- */
+/* ================================================================ */
+
+body { background-color: #E6E6E6; height: 100%; }
+
+/* ================================================================ */
+/* ---------------------->>> PERMANENTES <<<----------------------- */
+/* ================================================================ */
+
+/* -- CABECERA ---------------------------------------------------- */
+/* ================================================================ */
+
+#cabecera { height: 150px; position: relative; }
+
+/* -- Menu Perfiles Escritorio ------------------------------------ */
+/* ---------------------------------------------------------------- */
+
+nav#nav-perfiles                 { bottom: 20px; position: absolute; right: 20px; width: auto; }
+#nav-perfiles ul li              { display: inline-block; }
+#nav-perfiles ul li a            { border-right: 1px solid #999; display: block; padding: 0 10px; }
+#nav-perfiles ul li:last-child a { border-right: none; padding: 0 0 0 10px; }
+
+/* -- Menu Perfiles Responsivo ------------------------------------ */
+/* ---------------------------------------------------------------- */
+
+div#perfiles-rsp { border-top-style: solid; border-top-width: 1px; display: none; float: left; width: 100%; }
+
+#perfiles-rsp h5 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	display: block;
+	float: left;
+	height: 41px;
+	padding: 0 20px;
+	width: 100%;
+}
+
+#perfiles-rsp ul { border-top-style: solid; border-top-width: 1px; float: left; width: 100%; }
+
+#perfiles-rsp ul li {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	display: block;
+	float: left;
+	height: 41px;
+	width: 50%;
+}
+
+#perfiles-rsp ul li:nth-child(odd)  { border-left: none; border-right: none; }
+#perfiles-rsp ul li:nth-child(even) { border-right: none; }
+#perfiles-rsp ul li a               { float: left; padding: 0 20px; width: 100%; }
+
+/* -- Buscador Escritorio ----------------------------------------- */
+/* ---------------------------------------------------------------- */
+.col-4-pie { display: inline-block; padding: 0 20px; vertical-align: top; width: 25%; }
+div#buscador           { position: absolute; right: 20px; top: 50px; width: 300px; }
+#form-buscador         { height: 40px; overflow: hidden; width: 300px; }
+#form-buscador #s,
+#form-buscador #buscar { float: left; }
+#form-buscador #s      { border: none; border-radius: 0; height: 40px; padding: 5px 10px; width: 250px; }
+#form-buscador #buscar { border: none; cursor: pointer; height: 40px; margin: 0; padding: 0; width: 50px; }
+#form-buscador #buscar:active        { outline: none; }
+#searchform #buscar:-moz-focus-inner { border: 0; }
+#form-buscador #s       { background-color: #F1F1F1; } /* fondo gris claro */
+#form-buscador #s:focus { background-color: #E9E9E9; } /* fondo gris oscuro */
+#form-buscador #buscar  { background-color: #CCC; } /* fondo gris oscuro */
+
+/* -- Buscador Responsivo ----------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+div#buscador-rsp {
+	border-bottom-style: solid;
+	border-bottom-widht: 1px;
+	border-top-style: solid;
+	border-top-widht: 1px;
+	display: none;
+	float: left;
+	height: 60px;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+#form-buscador-rsp          { float: right; height: 40px; overflow: hidden; width: auto; }
+#form-buscador-rsp #s2, 
+#form-buscador-rsp #buscar2 { float: left; }
+
+#form-buscador-rsp #s2 {
+	border-bottom: none;
+	border-left: none;
+	border-right-style: solid;
+	border-right-width: 1px !important;
+	border-top: none;
+	height: 40px;
+	padding: 5px 10px;
+	width: 169px;
+}
+
+#form-buscador-rsp #buscar2                  { border: none; cursor: pointer; height: 40px; margin: 0; padding: 0; width: 60px; }
+#form-buscador-rsp #buscar2:active           { outline: none; }
+#form-buscador-rsp #buscar2:-moz-focus-inner { border: 0; }
+
+/* -- MENU PRINCIPAL ---------------------------------------------- */
+/* ================================================================ */
+
+section#menu-principal-escritorio { float: left; }
+nav#nav-escritorio                { padding: 0; }
+section#menu-principal-rsp        { display: none; }
+
+/* -- Escritorio -------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+#nav-escritorio ul#menu-escritorio { float: left; padding: 0; }
+#menu-escritorio li                { float: left; position: relative; width: auto; }
+#menu-escritorio li:hover          { background-color: #FFF; }
+
+#menu-escritorio li a {
+	border-right-style: solid;
+	border-right-width: 1px;
+	display: block;
+	float: left;
+	height: 60px;
+	padding: 0 8px;
+	width: auto;
+}
+
+#menu-escritorio li:last-child a { border-right: none; }
+
+#menu-escritorio li ul {
+	background-color: #FFF;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 60px;
+	width: 300px;
+	z-index: 90;
+}
+
+#menu-escritorio li:last-child ul { left: auto; right: 0; }
+#menu-escritorio li:hover > ul    { opacity: 1; }
+#menu-escritorio li ul li         { height: 0; overflow: hidden; padding: 0; }
+#menu-escritorio li:hover > ul li { height: auto; overflow: visible; padding: 0; }
+
+#menu-escritorio li ul li a {
+	border: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	height: auto;
+	margin: 0;
+	padding: 10px 10px 10px 20px;
+	width: 300px;
+}
+
+#menu-escritorio li ul li:last-child a { border: none; }
+#menu-escritorio li ul li a:hover      { border-bottom-style: solid; border-bottom-width: 1px; }
+
+/* -- Responsivo -------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+header#top-acordeon-rsp { display: block; height: 60px; padding: 10px 20px; position: relative; }
+
+button.navbar-toggle {
+	border: none;
+	cursor: pointer;
+	cursor: hand;
+	float: right;
+	padding: 10px;
+	position: relative;
+}
+
+.navbar-toggle:focus { outline: none; }
+
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 13px;
+	width: 1px;
+}
+
+.icon-bar               { background-color: #FFF; border-radius: 1px; display: block; height: 4px; }
+.icon-bar:nth-child(2)  { width: 35px; }
+.icon-bar:nth-child(3)  { width: 40px; }
+.icon-bar:nth-child(4)  { width: 30px; }
+.icon-bar + .icon-bar   { margin-top: 4px; }
+button::-moz-focus-inner,
+input::-moz-focus-inner { border: 0; padding: 0; }
+.collapse               { display: none; }
+.collapse.in            { display: block; }
+
+.collapsing {
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: height .35s ease;
+	   -moz-transition: height .35s ease;
+	    -ms-transition: height .35s ease;
+	     -o-transition: height .35s ease;
+	        transition: height .35s ease;
+}
+
+nav#nav-rsp ul                     { width: 100%; }
+#nav-rsp ul li.nivel-01            { border-top-style: solid; border-top-width: 1px; float: left; position: relative; width: 100%; }
+#nav-rsp ul li.nivel-01:last-child { border-bottom-style: solid; border-bottom-width: 1px; }
+#nav-rsp ul li ul li               { background-color: #EFEFEF; border-top: solid 1px #FFF; }
+li.nivel-01 a.nodesplegable,
+#nav-rsp ul li ul li a             { display: block; min-height: 40px; padding: 12px 100px 12px 20px; width: 100%; }
+#nav-rsp ul li ul li a:hover       { background-color: #FFF; }
+
+
+.toggle:focus { outline: none; }
+.toggle:hover,
+.toggle:focus { cursor: pointer; }
+.toggle a     { display: block; height: 40px; width: 100%; }
+
+/* -- CORPORATIVO ------------------------------------------------- */
+/* ================================================================ */
+
+
+
+/* -- Gobierno de Chile Top Escritorio ---------------------------- */
+/* ---------------------------------------------------------------- */
+
+#top-gob-escritorio {
+	background-color: #EE4143;
+	height: 15px;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	width: 120px;
+}
+
+#top-gob-escritorio .azul { background-color: #006CB7; float: left; height: 15px; width: 55px; }
+
+/* -- Gobierno de Chile Top Reponsivo ----------------------------- */
+/* ---------------------------------------------------------------- */
+
+#top-gob-rsp {
+	background-color: #EE4143;
+	display: none;
+	height: 5px;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	width: 80px;
+}
+
+#top-gob-rsp .azul { background-color: #006CB7; float: left; height: 5px; width: 36px; }
+
+/* -- Gobierno de Chile Pie Escritorio ---------------------------- */
+/* ---------------------------------------------------------------- */
+
+.gob-pie { bottom: 0; height: 120px; position: absolute; right: 20px; width: 120px; }
+
+/* -- Gobierno de Chile Pie Responsivo ---------------------------- */
+/* ---------------------------------------------------------------- */
+
+.gob-pie-rsp { float: right; width: 80px; }
+
+/* -- UTEM Top ---------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+#cabecera #utem-logo                { float: left; height: 70px; margin-left: 20px; margin-top: 40px; width: 300px; }
+#cabecera #utem-logo a              { display: block; float: left; height: 100%; width: 100%; }
+#cabecera #utem-logo h1             { left: -10000px; position: absolute; }
+#top-acordeon-rsp #utem-logo-rsp    { display: none; float: left; height: 40px; visibility: hidden; width: 140px; }
+#top-acordeon-rsp #utem-logo-rsp a  { display: block; float: left; height: 100%; width: 100%; }
+#top-acordeon-rsp #utem-logo-rsp h1 { left: -10000px; position: absolute; }
+
+/* -- Variante Portal Admision ------------------------------------ */
+
+.clr-adm #cabecera #utem-logo                { float: left; height: 70px; margin-left: 20px; margin-top: 40px; width: 460px; }
+.clr-adm #cabecera #utem-logo #utem-logo a   { display: block; float: left; height: 100%; width: 100%; }
+.clr-adm #cabecera #utem-logo h1             { left: -10000px; position: absolute; }
+
+.clr-adm #top-acordeon-rsp #utem-logo-rsp    { display: none; float: left; height: 40px; visibility: hidden; width: 140px; }
+.clr-adm #top-acordeon-rsp #utem-logo-rsp a  { display: block; float: left; height: 100%; width: 100%; }
+.clr-adm #top-acordeon-rsp #utem-logo-rsp h1 { left: -10000px; position: absolute; }
+
+/* -- UTEM Pie ---------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.contenedor-redes .acreditacion { display: inline-block; float: right; height: 36px; }
+
+/* -- REDES ------------------------------------------------------- */
+/* ================================================================ */
+
+#redes                   { background-color: #191919; border-bottom: solid 1px #000; }
+#redes .contenedor-redes { min-height: 80px; padding: 22px 20px; position: relative; vertical-align: middle !important; }
+nav.menu-redes ul        { display: inline-block; float: left; height: 36px; width: auto; }
+nav.menu-redes ul li h2  { float: left; margin-right: 20px; }
+
+nav.menu-redes ul li ul li {
+	float: left;
+	margin-right: 10px;
+	-webkit-transition: background-color .2s ease-in-out;
+	   -moz-transition: background-color .2s ease-in-out;
+	    -ms-transition: background-color .2s ease-in-out;
+	     -o-transition: background-color .2s ease-in-out;
+	        transition: background-color .2s ease-in-out;
+}
+
+nav.menu-redes ul li ul li:hover      { background-color: #292929; }
+nav.menu-redes ul li ul li:last-child { margin-right: 0; }
+
+/* -- PIE DE PAGINA ----------------------------------------------- */
+/* ================================================================ */
+
+#pie-pagina         { background-color: #252525; border-top: solid 1px #353535; padding: 40px 0 0 0; }
+div#menu-pie-pagina { padding-bottom: 40px; }
+
+#corporativo-pie-pagina .contenedor-crpvo-pie-pagina {
+	display: table;
+	height: 120px;
+	padding: 0 20px 40px 20px;
+	position: relative;
+}
+
+.cabecera-nav-pie-pagina    { height: 35px; }
+.cabecera-nav-pie-pagina h3 { float: left; height: 18px; width: 100%; }
+.meta-autor                 { display: table-cell; margin: 0 auto; vertical-align: middle; }
+.meta-autor .cp             { margin-top: 10px; }
+
+/* -- Menu pie de pagina ------------------------------------------ */
+/* ---------------------------------------------------------------- */
+
+div#menu-pie-pagina ul { display: table; float: left; width: 100%; }
+nav.nav-pie-pagina     { float: left; width: 100%; }
+.borde-menu-pie-pagina { border-left: dotted 1px #666; float: left; padding-left: 15px; width: 100%; }
+.nav-pie-pagina ul     { display: block; float: left; width: 100%; }
+.nav-pie-pagina ul li  { display: block; float: left; margin-bottom: 10px; width: 100%; }
+.nav-pie-pagina ul li:last-child { margin-bottom: 0; }
+
+
+
+
+/* -- PIE ARTICULO PRINCIPAL -------------------------------------- */
+/* ================================================================ */
+
+div.pie-contenido-principal    {
+	background-color: #F3F1EE;
+	border-bottom: solid 2px #B7AB9D;
+	border-top: solid 2px #B7AB9D;
+	float: left;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {}
+
+/* -- Diapositiva ------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+@media screen and (min-width:960px) and (min-height:660px)  { /* .heroSlider .rsOverflow, .royalSlider.heroSlider { height: 480px !important; } */ }
+@media screen and (min-width:960px) and (min-height:1000px) { /* .heroSlider .rsOverflow, .royalSlider.heroSlider { height: 660px !important; } */ }
+@media only screen and (max-width: 767px)                   { /* .clr-adm #robapagina { padding-top: 80px; } */ }
+
+/* ================================================================ */
+/* ---------------------->>> 959 > < 768 <<<----------------------- */
+/* ================================================================ */
+   
+@media only screen and (max-width: 800px) {
+
+	/* -- Cuadricula y Contenedores ------------- */
+	
+	.envoltura-16-nav-adm { width: 100% !important; }
+	
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9,
+	.col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16 { margin-left: 15px; margin-right: 15px; }
+
+	.col-1  { width: 18px; }   .col-2 { width: 66px; }   .col-3 { width: 114px; }  .col-4 { width: 162px; }
+	.col-5  { width: 210px; }  .col-6 { width: 258px; }  .col-7 { width: 306px; }  .col-8 { width: 354px; }
+	.col-9  { width: 402px; } .col-10 { width: 450px; } .col-11 { width: 498px; } .col-12 { width: 546px; }
+	.col-13 { width: 594px; } .col-14 { width: 642px; } .col-15 { width: 690px; } 
+
+	/* -- Quitar y mostrar de pantalla ---------- */
+
+	.contenedor-redes .acreditacion, #menu-principal-escritorio, .gob-pie,
+	#video-secundario ul li:last-child { display: none; }
+	section#menu-principal-rsp, .borde-sup-crpvo-ppag { display: block; }
+	
+	/* -- Cabecera ------------------------------ */
+	
+	#cabecera #utem-logo          { height: 70px; margin-top: 40px; width: 180px; }	
+	.clr-adm #cabecera #utem-logo { height: 70px; margin-top: 40px; width: 180px; }
+	
+	/* -- Redes --------------------------------- */
+	
+	nav.menu-redes    { width: 100%; }
+	nav.menu-redes ul { float: none !important; }
+
+	/* -- Pie ----------------------------------- */
+
+	.col-4-pie                    { margin-bottom: 40px; padding: 0 15px; width: 50%; }
+	.col-4-pie:nth-child(2)       { border-right: none; }
+	.col-4-pie:nth-child(3),
+	.col-4-pie:nth-child(4)       { margin-bottom: 0; }
+	#logos-pie-rsp                { display: block !important; padding: 0 15px 0 15px; }
+	.acreditacion-rsp             { float: left; height: 80px; padding: 0; width: 199px; }
+	.meta-autor                   { display: block !important; padding: 0 15px 0 15px !important; vertical-align: top; }
+	#corporativo-pie-pagina .contenedor-crpvo-pie-pagina { height: auto; padding: 0 15px 40px 15px; }
+}
+
+#redes .contenedor-redes, .meta-autor { text-align: center !important; }
+p, ul                  {font-family: 'OpenSans-Regular', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 150%}
+@media only screen and (max-width: 480px) {
+
+	/* -- Redes --------------------------------- */
+
+	nav.menu-redes ul li h2 { float: none; margin-bottom: 5px; margin-right: 0; }
+
+	/* -- Pie ----------------------------------- */
+
+	
+	
+	
+	div#intranet, nav.nav-pie-pagina,
+	.borde-menu-pie-pagina  { border-left: none; padding-left: 0; }
+
+	/* -- Accesos ------------------------------- */
+
+
+}
+
+@media only screen and (max-width: 300px) {
+
+	/* -- Atajos y Accesos ---------------------- */
+
+	#atajos-portal ul li figure { margin: 0 auto; width: 70%; }
+
+}
+div#intranet              { float: left; margin-top: 5px; width: 100%; }
+#form-intranet            { float: left; overflow: hidden; width: 100%; }
+#form-intranet .campo     { float: left; margin-bottom: 10px; width: 100%; }
+#form-intranet .campo-alt { float: left; width: 100%; }
+
+#form-intranet .campo #usuario, #form-intranet .campo #clave {
+	background: #191919;
+	border: none;
+	display: block; 
+	float: left;
+	height: 30px;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+#usuario:focus, #clave:focus { background-color: #000; }
+
+#entrar {
+	background-color: #191919;
+	border: solid 0px #000;
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#entrar:hover            { background-color: #000; } 
+#entrar:active           { background-color: #000; outline: none; }
+#entrar:-moz-focus-inner { border: 0; }
+
+
+
+.meta-autor                   { color: #666; font-size: 1.4rem; line-height: 150%; }
+.meta-autor .cp               { font-size: 13px; line-height: 130%; }
+.meta-autor a                 { color: #E6E6E6; }
+#form-intranet .campo #usuario,
+#form-intranet .campo #clave  { color: #666; font-family: 'OpenSans-Regular', arial, helvetica; font-size: 13px; }
+#entrar                       {color: #666;font-family: 'OpenSans', arial, helvetica;font-size: 14px; font-weight:600; font-size: 13px;}
+.gob-pie-rsp                  { text-align: center; }
+
+a                      {font-family: 'OpenSans', Arial, Helvetica, sans-serif; font-weight:600;}
+#logos-pie-rsp                {display: block !important;padding: 0 15px 0 15px;}
+.acreditacion-rsp             { float: left; height: 80px; padding: 0; width: 199px; }

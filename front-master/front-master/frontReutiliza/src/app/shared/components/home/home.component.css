@@ -1,0 +1,12 @@
+
+#headerColumns{
+    display: inline;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+#fondo{
+    background-image: url("../../../../assets/images/fondo.jpg");
+    height: 300px;
+}

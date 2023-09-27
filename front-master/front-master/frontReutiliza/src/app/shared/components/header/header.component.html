@@ -1,0 +1,76 @@
+
+<div class="row" id="headerColumns">
+  <div style="height:130px;" class="column left" id="logoSustenta"></div>
+  <div style="height:130px;" class="column center" id="logoUtem"></div>
+  <table class="column right" style="height:130px;">
+  <tr>
+    <td id="logoGobierno">
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-0 search" type="search" placeholder="Buscar productos, palabras y más..." aria-label="Search">
+        <!--<img class="search_image" src="/assets/images/buscar.png">-->
+        <input class="btn search_image" type="image" src="/assets/images/buscar.png" alt="Search">
+        <td style="width:52.5%">
+        </td>
+        <td>
+        <button class="btn  my-2 my-sm-0 post_notice" [routerLink]="['/publica-aviso' ]" type="submit">Publica tu aviso</button>
+        </td>
+        </form>
+    </td>
+    </tr>
+  </table>
+
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar_style">
+  <a class="navbar-brand" href="#"><img src="/assets/icons/iconoReutiliza.png" alt="logo" style="width:40px; margin-left: 20%;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active border-md-right">
+        <a class="nav-link" [routerLink]="['/']" >INICIO <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item border-md-right" *ngIf="!admin">
+        <a class="nav-link" [routerLink]="['/quienes-somos']" >QUIENES SOMOS</a>
+      </li>
+       <li class="nav-item border-md-right" *ngIf="admin">
+        <a class="nav-link"  [routerLink]="['/admin', 'categorias']" style="cursor: pointer;">CATEGORIAS</a>
+      </li>
+      <li class="nav-item border-md-right" *ngIf="!admin">
+        <a class="nav-link" >SUSTENTABILIDAD</a>
+      </li>
+      <li class="nav-item border-md-right" *ngIf="admin">
+        <a class="nav-link" [routerLink]="['/admin', 'admin-users']" style="cursor: pointer;">USUARIOS</a>
+      </li>
+      <li class="nav-item border-md-right">
+        <a class="nav-link" href="#">CONTACTO</a>
+      </li>
+      <li class="nav-item border-md-right">
+        <a class="nav-link" [routerLink]="['/registrate']" >REGÍSTRATE</a>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MI CUENTA
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['/user', 'mi-cuenta']" >MIS DATOS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['/user', 'evaluacion']">EVALUACIÓN</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">NOTIFICACIONES</a>
+        </div>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>-->
+    </ul>
+  </div>
+</nav>

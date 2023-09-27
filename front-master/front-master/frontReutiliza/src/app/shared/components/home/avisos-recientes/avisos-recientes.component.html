@@ -1,0 +1,11 @@
+<div class="container" style="text-align:center;background: #F4F4F4;">
+  <h1>
+    {{ title }}
+  </h1>
+  <owl-carousel-o [options]="customOptions" >
+    <ng-container *ngFor="let image of images">
+      <ng-template carouselSlide><img class="btn" [src]="image.image">{{image.titulo}}</ng-template>  
+    </ng-container>
+  </owl-carousel-o>
+</div>
+

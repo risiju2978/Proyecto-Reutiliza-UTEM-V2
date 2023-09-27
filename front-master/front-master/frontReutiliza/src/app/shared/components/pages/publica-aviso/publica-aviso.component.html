@@ -1,0 +1,73 @@
+
+<div class="inicio">
+    <div class="container mt-4" style="text-align:-webkit-center;">
+    <div class="card border-warning" style="max-width: 30rem;">
+    
+    <div class="card-header" style=""><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Reglas del juego</div>
+    <div class="card-body text-warning">
+        <h5 class="card-title">Debes tener en cuenta:</h5>
+        <p class="card-text mb-0">Si publicas algo inadecuado tu cuenta sera bloqueada.</p>
+        <p class="card-text mb-0">Limitate a publicar un articulo por aviso.</p>
+        <p class="card-text mb-0">La ubicación es especifica por aviso, enfocado en la entrega.</p>
+        <p class="card-text">Recuerda subir solo una publicación por artículo. </p>
+    </div>
+    </div>
+</div>
+
+<div class="row" style="margin-right:0;" id="headerColumns" >
+  <div class="datosPersonales mt-5" >Publica tu aviso</div>
+  <div class="container" id="datosPersonales">
+    <form >
+        <div class="form-row mt-3 mb-1">
+            <div class="col-md-6 mb-3 titulos">Información</div> 
+            <div class="col-md-6 mb-3 titulos">Ubicación del producto</div> 
+            <div class="col-md-6 mb-3 mt-4">
+                <label >Título del aviso</label>
+                <input type="text" class="form-control" formControlName="titulo"  id="tituloadd" placeholder="Ingresa el título" (blur)="validateFormFunction()" required >
+            </div>    
+            <div class="col-md-6 mb-2 mt-4">
+                <label>Comuna</label>
+                <select id="inputComuna validationServer02" class="form-control" formControlName="comuna" (blur)="validateFormFunction()" required>
+                    <option selected>Elegir...</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label >Descripción</label>
+                <input type="text" class="form-control" placeholder="Ingresa una descripción del producto" formControlName="descripcion"  id="descripcionAdd"  (blur)="validateFormFunction()" required>
+            </div>
+            
+            <div class="col-md-6 mb-3" >
+                <label  >Campus</label>    
+                <select id="inputCampus" class="form-control" formControlName="campus" (blur)="validateFormFunction()" required>
+                    <option  selected>Selecciona </option>
+                    <option value="F" >Femenino</option>
+                    <option value="M" >Masculino</option>
+                    <option value="O" >Omitir</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-3" >
+                <label  >Categoria</label>   <!--checkbok--> 
+                <select id="inputCategoria" class="form-control" formControlName="categoria" (blur)="validateFormFunction()" required>
+                    <option  selected>Selecciona </option>
+                </select>
+            </div>
+            
+            <div class="col-md-6 mb-4" >
+                <div class="form-group mt-4">
+                    <label class="ml-3" >Agregar imagenes </label>
+                    <label class="btn btn-primary ml-2" id="circle_upload">
+                        <input id="my-file-selector" type="file" style="display:none;" (change)="uploadFile($event)">
+                        <span id="image">+</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="!this.validateForm" class="btn validar" style="margin-left: 42%;" >Publicar</button>
+        </div>
+        </form>
+  </div>
+    
+</div>
+</div>
+  

@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row mb-3">
+
+      <div class="col-6 mt-5  foto" style="text-align: right;">
+        <img class="btn" src="assets/images/gina.JPG" style=" width:150px;height:150px;">
+      </div>
+
+      <div class="col-6 mt-5 name estrellas">
+        <div class="mt-3 d-flex namestyle">{{name + ' '+lastname}}</div>
+        <mat-icon *ngFor="let ratingId of ratingArr;index as i">
+            {{showIcon(i)}}
+        </mat-icon>
+        ({{(promedio)}}) 
+      </div>
+    </div>
+    <div class="col-md-12 d-flex" style="width:100%;flex-flow: row wrap;    text-align: left;">
+    <div class="col-md-6 mb-3 d-flex" *ngFor="let info of informacion" >
+        <div class="col-md-4" style="text-align: right">
+            <img class="btn" [src]="info[2]">
+        </div>
+        <div class="col-md-7">
+            <div class="mt-2 ">{{info[0]}}</div>
+            <mat-icon style="font-size:25px;margin-right: 0%;" *ngFor="let ratingId of ratingArr;index as i">
+                {{showIcon2(i, info[3])}}
+            </mat-icon> 
+            ({{info[3]}})
+            <div class="mt-2 description">{{info[1]}}</div>
+        </div>
+    </div>
+    </div>
+</div>
