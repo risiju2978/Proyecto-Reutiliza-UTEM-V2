@@ -15,12 +15,19 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./publicar-aviso.component.css']
 })
 export class PublicarAvisoComponent {
+agregarEditarMueble() {
+throw new Error('Method not implemented.');
+}
+AgregarMuebles: any;
+subirArchivo($event: Event) {
+throw new Error('Method not implemented.');
+}
 
 }
 
 
-
-/*import { ToastrService } from 'ngx-toastr';
+/*
+import { ToastrService } from 'ngx-toastr';
 import { Storage, ref, uploadBytes, listAll, getDownloadURL} from '@angular/fire/storage';
 import { ServicioConeccionService } from '../servicio-coneccion.service';
 
@@ -64,7 +71,7 @@ export class AgregarMueblesComponent implements OnInit {
    const file = $event.target.files[0];
    const imgRef = ref(this.storage, 'image/${file.name}');
   
-   uploadBytes(imgRef, file).then((x) =>{
+   uploadBytes(imgRef, file).then((x: any) =>{
     this.getImages();
    }).catch((_error: any) => {
     this.toastr.error('Hubo un error al subir la imagen','ERROR',{positionClass: 'toast-bottom-right'});
@@ -75,7 +82,7 @@ export class AgregarMueblesComponent implements OnInit {
   {
     const imageRef = ref(this.storage, 'images');
   
-    listAll(imageRef).then(async images =>{
+    listAll(imageRef).then(async (images: { items: any; }) =>{
       this.images = [];
       for(let image of images.items){
         const url = await getDownloadURL(image);
@@ -155,7 +162,7 @@ export class AgregarMueblesComponent implements OnInit {
     this.titulo = false;
     if(this.id !== null){
       this.loading = true;
-      this._ServicioConeccionService.getMuebleEdit(this.id).subscribe(data =>{
+      this._ServicioConeccionService.getMuebleEdit(this.id).subscribe((data: { payload: { data: () => { (): any; new(): any;[x: string]: any; }; }; }) =>{
        this.loading = false;
         this.AgregarMuebles.setValue({
           Nombre: data.payload.data()['Nombre'],
@@ -167,5 +174,5 @@ export class AgregarMueblesComponent implements OnInit {
     }
   }
   }
-  
   */
+  

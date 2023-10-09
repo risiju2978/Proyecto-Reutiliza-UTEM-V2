@@ -10,6 +10,7 @@ import { ReduceReutilizaReciclaComponent } from './Vistas_general/reduce-reutili
 import { RegistrarseComponent } from './Vistas_general/registrarse/registrarse.component';
 import { ReglasDeReutilizaComponent } from './Vistas_general/reglas-de-reutiliza/reglas-de-reutiliza.component';
 import { AdministradorComponent } from './Modulos/administrador/administrador.component';
+import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
 
 //import { AdminGuard } from './guards/admin.guard'; 
 import { ListaAvisosComponent } from './Pagina-de-inicio/lista-avisos/lista-avisos.component';
@@ -28,10 +29,11 @@ const routes: Routes = [
   { path: 'reglas-de-reutiliza', component: ReglasDeReutilizaComponent },
   { path: 'administrador', component: AdministradorComponent},
   { path: 'lista-avisos', component:  ListaAvisosComponent}, 
+  { path: 'usuarios', component: UsuariosComponent },
   {
     path: 'administrador',
     loadChildren: () =>
-      import('./Modulos/administrador/administrador-routing.module').then(
+      import('./Modulos/administrador/administrador.module').then(
         (m) => m.AdministradorModule
       ),
   },
@@ -46,9 +48,6 @@ const routes: Routes = [
  
 
 ];
-
-
-
 
 
 @NgModule({

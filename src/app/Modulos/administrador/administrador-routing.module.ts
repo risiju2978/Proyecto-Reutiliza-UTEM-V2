@@ -8,47 +8,43 @@ import {  AdministrarcionDeUsuariosComponent } from './Permisos-del-administrado
 import { AdministrarcionDePublicacionesComponent } from './Permisos-del-administrador/administracion-de-publicaciones/administrarcion-de-publicaciones.component';
 import { PublicarAvisoComponent  } from './Permisos-del-administrador/publicar-aviso/publicar-aviso.component';
 import { AdministradorComponent } from './administrador.component';
+import { UsuariosComponent } from '../usuarios/usuarios.component';
 
 // Define las rutas hijas para el módulo "Administrador"
-const administradorRoutes: Routes = [
-    {
-        path: 'administrador',
-        component: AdministradorComponent,
-        children: [
-    
-
+const routes: Routes = [
+  // Otras rutas aquí...
   {
-    path: 'categorias',
-    component: CategoriasComponent,
+    path: 'usuarios',
+    component: UsuariosComponent,
   },
   {
-    path: 'administracion-de-usuarios',
-    component: AdministrarcionDeUsuariosComponent,
+    path: 'administrador',
+    component: AdministradorComponent,
+    children: [
+     
+      {
+        path: 'categorias',
+        component: CategoriasComponent,
+      },
+      {
+        path: 'administracion-de-usuarios',
+        component: AdministrarcionDeUsuariosComponent,
+      },
+      {
+        path: 'administracion-de-publicaciones',
+        component: AdministrarcionDePublicacionesComponent,
+      },
+      {
+        path: 'publicar-avisos',
+        component: PublicarAvisoComponent,
+      },
+    ],
   },
-  {
-    path: 'administracion-de-publicaciones',
-    component: AdministrarcionDePublicacionesComponent,
-  },
-  {
-    path: 'publicar-avisos',
-    component:  PublicarAvisoComponent,
-  },
-]
-    }
-  
 ];
 
+
 @NgModule({
-  declarations: [
-    // Aquí puedes declarar los componentes específicos del módulo "Administrador"
-    CategoriasComponent,
-    AdministrarcionDePublicacionesComponent,
-    AdministrarcionDeUsuariosComponent,
-    PublicarAvisoComponent,
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(administradorRoutes), // Usa "forChild" para rutas hijas
-  ],
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class AdministradorModule {}
+export class AdministradorRoutingModule {}

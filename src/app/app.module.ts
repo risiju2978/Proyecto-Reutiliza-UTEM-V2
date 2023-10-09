@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+  
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +20,7 @@ import { AdministradorComponent } from './Modulos/administrador/administrador.co
 import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
 import { PublicarAvisoComponent } from './Modulos/usuarios/Permisos-del-usuario/publicar-aviso/publicar-aviso.component';
 import { FormsModule } from '@angular/forms';
-import { AdministradorModule } from './Modulos/administrador/administrador-routing.module';
+import { AdministradorRoutingModule } from './Modulos/administrador/administrador-routing.module'
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { AdministradorModule } from './Modulos/administrador/administrador-routi
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    AdministradorModule,
+    AdministradorRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
