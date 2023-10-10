@@ -11,14 +11,14 @@ import { RegistrarseComponent } from './Vistas_general/registrarse/registrarse.c
 import { ReglasDeReutilizaComponent } from './Vistas_general/reglas-de-reutiliza/reglas-de-reutiliza.component';
 import { AdministradorComponent } from './Modulos/administrador/administrador.component';
 import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
+import { PublicarAvisoComponent } from './Modulos/administrador/Permisos-del-administrador/publicar-aviso/publicar-aviso.component';
 
-//import { AdminGuard } from './guards/admin.guard'; 
+//import { AdminGuard } from './guards/admin.guard';
 import { ListaAvisosComponent } from './Pagina-de-inicio/lista-avisos/lista-avisos.component';
 
 
 // rutas establecidas desde pagina de inicio
 const routes: Routes = [
-  { path: '', redirectTo: 'lista-avisos', pathMatch: 'full' }, 
   { path: 'header', component: HeaderComponent },
   { path: 'Footer', component: FooterComponent },
   { path: 'como-funciona', component: ComoFuncionaComponent },
@@ -28,24 +28,27 @@ const routes: Routes = [
   { path: 'registrarse', component: RegistrarseComponent },
   { path: 'reglas-de-reutiliza', component: ReglasDeReutilizaComponent },
   { path: 'administrador', component: AdministradorComponent},
-  { path: 'lista-avisos', component:  ListaAvisosComponent}, 
+  { path: 'lista-avisos', component:  ListaAvisosComponent},
   { path: 'usuarios', component: UsuariosComponent },
-  {
+  { path: 'publicar-aviso', component: PublicarAvisoComponent },
+  {  path: '', redirectTo: 'lista-avisos', pathMatch: 'full'  },
+
+/*   {
     path: 'administrador',
     loadChildren: () =>
       import('./Modulos/administrador/administrador.module').then(
         (m) => m.AdministradorModule
       ),
-  },
-  
-  
-  
+  }, */
+
+
+
   /*{
     path: 'administrador',
     loadChildren: () => import('./Modulos/administrador/administrador.component').then(m => m.AdministradorComponent),
     canLoad: [AdminGuard] // Utiliza el guard CanLoad en lugar de canActivate
   },*/
- 
+
 
 ];
 

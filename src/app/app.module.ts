@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-  
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +17,8 @@ import { IniciarSesionComponent } from './Vistas_general/iniciar-sesion/iniciar-
 import { ListaAvisosComponent } from './Pagina-de-inicio/lista-avisos/lista-avisos.component';
 import { AdministradorComponent } from './Modulos/administrador/administrador.component';
 import { UsuariosComponent } from './Modulos/usuarios/usuarios.component';
-import { PublicarAvisoComponent } from './Modulos/usuarios/Permisos-del-usuario/publicar-aviso/publicar-aviso.component';
+import { PublicarAvisoComponent } from './Modulos/administrador/Permisos-del-administrador/publicar-aviso/publicar-aviso.component';
+
 import { FormsModule } from '@angular/forms';
 import { AdministradorRoutingModule } from './Modulos/administrador/administrador-routing.module'
 
@@ -37,8 +37,7 @@ import { AdministradorRoutingModule } from './Modulos/administrador/administrado
     AdministradorComponent,
     UsuariosComponent,
     PublicarAvisoComponent,
-   
-  
+
   ],
   imports: [
     BrowserModule,
@@ -46,7 +45,7 @@ import { AdministradorRoutingModule } from './Modulos/administrador/administrado
     BrowserAnimationsModule,
     FormsModule,
     AdministradorRoutingModule,
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
