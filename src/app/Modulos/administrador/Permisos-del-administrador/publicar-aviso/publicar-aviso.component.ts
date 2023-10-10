@@ -1,29 +1,60 @@
-//import { Component } from '@angular/core';
-
-
-
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators  } from '@angular/forms';
-
-import { ActivatedRoute, Router } from '@angular/router';
-
-
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-publicar-aviso',
   templateUrl: './publicar-aviso.component.html',
   styleUrls: ['./publicar-aviso.component.css']
 })
-export class PublicarAvisoComponent {
-agregarEditarMueble() {
-throw new Error('Method not implemented.');
-}
-AgregarMuebles: any;
-subirArchivo($event: Event) {
-throw new Error('Method not implemented.');
+export class PublicarAvisoComponent implements OnInit {
+
+  avisos: any[] = [];
+  aviso: any = {};
+
+  constructor(private http: HttpClient) { }
+
+  ngOnInit(): void {
+    this.loadAvisos();
+  }
+
+  loadAvisos() {
+    this.http.get('http://127.0.0.1:5000/api/resource/').subscribe(data => {
+      this.avisos = data as any[];
+    });
+  }
+
+  onSubmit() {
+    if (this.aviso.id) {
+      // Si el aviso ya tiene un ID, entonces es una actualización
+      this.http.put(`http://127.0.0.1:5000/api/resource/${this.aviso.id}`, this.aviso).subscribe(() => {
+        this.loadAvisos();
+        this.aviso = {};
+      });
+    } else {
+      // Si el aviso no tiene un ID, entonces es una inserción
+      this.http.post('http://127.0.0.1:5000/api/resource/', this.aviso).subscribe(() => {
+        this.loadAvisos();
+        this.aviso = {};
+      });
+    }
+  }
+
+
+  onEdit(aviso: any) {
+    this.aviso = { ...aviso };
+  }
+
+  onDelete(id: number) {
+    this.http.delete(`http://127.0.0.1:5000/api/resource/${id}`).subscribe(() => {
+      this.loadAvisos();
+    });
+  }
 }
 
-}
+
+
+
+
 
 
 /*
@@ -39,17 +70,17 @@ export class AgregarMueblesComponent implements OnInit {
   id: string | null;
     public titulo!: boolean;
     images: string[] = [];
-    
-  
-  
-  
+
+
+
+
     constructor(private fb: FormBuilder,
                   private _ServicioConeccionService: ServicioConeccionService,
                    private router: Router,
                     private toastr: ToastrService,
                     private aRoute: ActivatedRoute,
-  
-                    private storage: Storage) { 
+
+                    private storage: Storage) {
                     this.AgregarMuebles = this.fb.group({
         Nombre:['', Validators.required],
         Descripcion:['', Validators.required],
@@ -57,46 +88,46 @@ export class AgregarMueblesComponent implements OnInit {
         Foto:['', Validators.required],
       })
       this.id = this.aRoute.snapshot.paramMap.get('id');
-                  
+
     }
-  
+
     ngOnInit(): void {
       this.EditarMueble();
       this.getImages();
     }
-  
-   
-  
+
+
+
   subirArchivo($event: any) {
    const file = $event.target.files[0];
    const imgRef = ref(this.storage, 'image/${file.name}');
-  
+
    uploadBytes(imgRef, file).then((x: any) =>{
     this.getImages();
    }).catch((_error: any) => {
     this.toastr.error('Hubo un error al subir la imagen','ERROR',{positionClass: 'toast-bottom-right'});
   })
-  
+
   }
   getImages()
   {
     const imageRef = ref(this.storage, 'images');
-  
+
     listAll(imageRef).then(async (images: { items: any; }) =>{
       this.images = [];
       for(let image of images.items){
         const url = await getDownloadURL(image);
         this.images.push(url);
       }
-  
+
     }).catch((_error: any) => {
       this.toastr.error('Hubo un error al mostrar el producto','ERROR',{positionClass: 'toast-bottom-right'});
     })
    }
-  
-  
-  
-  
+
+
+
+
     agregarEditarMueble(){
       this.submitted = true;
       if(this.AgregarMuebles.invalid){
@@ -104,7 +135,7 @@ export class AgregarMueblesComponent implements OnInit {
       }
       if(this.id === null){
         this.Agregar_mueble();
-         
+
       }else{
         this.EditarMuebleAhora(this.id);
       }
@@ -128,15 +159,15 @@ export class AgregarMueblesComponent implements OnInit {
       this.toastr.success('¡El mueble fue registrado con exito!', 'Mueble agregado al catalogo',{
         positionClass: 'toast-bottom-right'
       })
-       
-    
+
+
       this.loading = false;
       this.router.navigate(['/crud']);
     }).catch((_error: any) => {
       this.toastr.error('Hubo un error al agregar el producto','ERROR',{positionClass: 'toast-bottom-right'});
       this.loading = false;
     })
-    
+
   }
   EditarMuebleAhora(id: string){
     const mueble: any ={
@@ -175,4 +206,3 @@ export class AgregarMueblesComponent implements OnInit {
   }
   }
   */
-  
